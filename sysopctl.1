@@ -1,0 +1,53 @@
+.TH sysopctl 1 "December 2024" "sysopctl v1.0.0" "System Administration Tool"
+.SH NAME
+sysopctl \- A command-line tool for managing Linux system resources and tasks.
+
+.SH SYNOPSIS
+sysopctl [COMMAND] [OPTIONS]
+
+.SH DESCRIPTION
+sysopctl is a versatile system management tool that simplifies Linux system monitoring and administration tasks.
+
+.SH COMMANDS
+.TP
+\fBservice list\fR
+Display all active services running on the system.
+.TP
+\fBservice start <service-name>\fR
+Start the specified service.
+.TP
+\fBservice stop <service-name>\fR
+Stop the specified running service.
+.TP
+\fBsystem load\fR
+Display system load averages over the past 1, 5, and 15 minutes.
+.TP
+\fBdisk usage\fR
+Display disk usage statistics in a human-readable format.
+.TP
+\fBprocess monitor\fR
+Launch an interactive process monitor to view system resource usage in real-time.
+.TP
+\fBlogs analyze\fR
+Analyze system logs for errors, warnings, and anomalies.
+.TP
+\fBbackup <source-path> <destination-path>\fR
+Backup files or directories using rsync.
+
+.SH EXAMPLES
+.TP
+\fBsysopctl service list\fR
+List all running services.
+.TP
+\fBsysopctl system load\fR
+Display the system load averages.
+.TP
+\fBsysopctl backup /etc /backup\fR
+Backup the `/etc` directory to `/backup`.
+
+.SH AUTHOR
+Written by [Sarthak Kumar].
+
+.SH COPYRIGHT
+Copyright © 2024 [Sarthak Kumar].  
+Licensed under the MIT License.
